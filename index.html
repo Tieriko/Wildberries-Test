@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовое задание. Тимофей Назарцев</title>
+    <link rel="stylesheet" href="test.css">
+    
+</head>
+<body>
+<h1>Тестовой задание. Тимофей Назарцев, <a href='mailto:timnazarcev@gmail.com'>timnazarcev@gmail.com</a></h1>
+<div id="content">
+    <div class="variables">
+        <h2>Работа с переменными.</h2>
+        <details>
+            <summary>Задача №1</summary>
+            <p>Создайте переменные a=10 и b=2. Выведите на экран их сумму.</p>
+        </details>
+        <button class="btn" onclick="onePointOne()">Экран</button>
+        <details>
+            <summary>Задача №2</summary>
+            <p>Создайте переменные a=17 и b=10. Отнимите от a переменную b и результат 
+                присвойте переменной c. Затем создайте переменную d, присвойте ей значение 7. 
+                Сложите переменные c и d, а результат запишите в переменную result.  
+                Выведите в консоль значение переменной result.</p>
+        </details>
+        <button class="btn" onclick="onePointTwo()">Консоль</button>
+    </div>
+    <div class="strings">
+        <h2>Работа со строками</h2>
+        <details>
+            <summary>Задача №1</summary>
+            <p>Создайте переменные str1='Привет, ' и str2='Мир!'. С помощью этих переменных 
+                и операции сложения строк выведите на экран фразу 'Привет, Мир!'.</p>
+        </details>
+        <button class="btn" onclick="twoPointOne()">Экран</button>
+        <details>
+            <summary>Задача №2</summary>
+            <p>Создайте переменную num и присвойте ей строковое значение '12345'. 
+                Найдите произведение (умножение) цифр этого числа  и выведите в консоль.</p>
+        </details>
+        <button class="btn" onclick="twoPointTwo()">Консоль</button>
+    </div>
+    <div class="arrays">
+        <h2>Работа с массивами</h2>
+        <details>
+            <summary>Задача №1</summary>
+            <p>Создайте массив arr = ['a', 'b', 'c', 'd'] и с его помощью выведите на экран строку 'a+b, c+d'.</p>
+        </details>
+        <button class="btn" onclick="threePointOne()">Экран</button>
+        <details>
+            <summary>Задача №2</summary>
+            <p>Создайте пустой массив arr и заполните его случайными числами от 1 до 100. Результат выведите в консоль.</p>
+        </details>
+        <button class="btn" onclick="threePointTwo()">Консоль</button>
+    </div>
+    <div class="objects">
+        <h2>Объекты (ассоциативные массивы)</h2>
+        <details>
+            <summary>Задача №1</summary>
+            <p>Создайте объект var obj = {a: 1, b: 2, c: 3}. Выведите на экран элемент с ключом 'c' 
+                двумя способами: через квадратные скобки и как свойство объекта.</p>
+        </details>
+        <button class="btn" onclick="fourPointOne()">Экран</button>
+    </div>
+    <div class="tasks">
+        <h2>Задачи</h2>
+        <details>
+            <summary>Задача №1</summary>
+            <p>Сгенерируйте строку из десяти случайных цифр и выведите её в консоль. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. 
+                Если это так - выведите в консоль 'да', в противном случае выведите в консоль 'нет'.</p>
+        </details>
+        <button class="btn" onclick="taskOne()">Консоль</button>
+        <details>
+            <summary>Задача №2</summary>
+            <p>Создайте поле для ввода текста. При любом изменении вводимого текста выводите в консоль значение, которое содержится в поле ввода.</p>
+        </details>
+        <input type="text" id="fname" onkeyup="taskTwo()">
+        <p><span id="demo"></span></p>
+        <details>
+            <summary>Задача №3</summary>
+            <p class="code">Сейчас console.log  выводит "undefined", нужно это исправить:<br>
+                    function Bomb(message, delay) {<br>
+                        this.message = message;<br>
+                        setTimeout(this.blowUp, delay * 1000);<br>
+                    }<br>
+                    Bomb.prototype.blowUp = function () {<br>
+                        console.log(this.message);<br>
+                    };<br>
+                    new Bomb("Explosion!", .5);
+                    </p>
+        </details>
+        <button class="btn" onclick="taskThree()">Консоль</button>
+        <details>
+            <summary>Задача №4</summary>
+            <p>По запросу:<br>
+
+                    https://data-live.flightradar24.com/zones/fcgi/feed.js?bounds=56.84,55.27,33.48,41.48<br>
+                    
+                    Вы можете получить информацию о самолетах в режиме реального времени находящихся вблизи аэропорта Домодедово. Выведите в консоль данные первых трех самолетов.
+                    </p>
+        </details>
+        <button class="btn" onclick="taskFour()">Консоль</button>
+    </div>
+<button onclick="toggleClass()" class="easter-egg btn">?</button>
+<img src="design.jpg" id="easter-egg-img" class="passion reveal">
+</div>
+</body>
+
+<script src="test.js">
+</script>
+</html>
