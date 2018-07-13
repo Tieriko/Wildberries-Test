@@ -1,5 +1,5 @@
 // 1.1
-    let onePointOne = function(){
+let onePointOne = function(){
     let a = 10;
     let b = 2;
     alert(+a + +b);
