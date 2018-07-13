@@ -74,7 +74,7 @@ let fourPointOne = function (){
     alert(obj.c);
 }
 
-// 3.2.1 
+// 5.1 
 let taskOne = function (){
     //Получаем рандомный int,
     //в пределах от min до max (включительно)
@@ -98,13 +98,13 @@ let taskOne = function (){
 
 }
 
-// 3.2.2
+// 5.2
 let taskTwo = function (){
     let x = document.getElementById("fname").value;
     console.log(x);
 }
 
-// 3.2.3
+// 5.3
 let taskThree = function (){
     function Bomb(message, delay) {
         this.message = message;
@@ -117,7 +117,7 @@ let taskThree = function (){
     new Bomb("Explosion!", .5);
 }
 
-// 4.1
+// 5.4
 let taskFour = function () {
     const myRequest = new Request('https://data-live.flightradar24.com/zones/fcgi/feed.js?bounds=56.84,55.27,33.48,41.48');
 
